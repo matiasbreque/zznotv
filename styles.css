@@ -83,7 +83,12 @@ header{
     padding: 0px ; 
    
 }
+/*BORRAR LUEGO*/
+.img__logo:hover{
 
+    margin: 1px;
+    padding: 1px;
+}
 
 /*Menu*/
 
@@ -162,8 +167,30 @@ header{
 .news{
     font-style: italic;
     font-size: smaller;
+    animation: news 3s  infinite forwards;
 }
-
+/*BORRAR LUEGO*/
+@keyframes news{
+    0% {
+      color: rgb(05, 05, 05);
+      padding: 0px 0px 0px 0px;
+    }
+    25% {
+        color: rgb(200, 0, 0);;
+      padding: 0px 0px 0px 10px;
+    }
+    50% {
+      color: rgb(255, 50, 50);
+      padding: 0px 0px 0px 10px;
+      transform: translateX(20px) rotate(360deg);
+    }
+    100% {
+      color: rgb(05, 10, 10);;
+      padding: 0px 0px 0px 0px;
+    }
+  }
+  
+  
 
 /*Articulos*/
 /*.indexArticulos{
