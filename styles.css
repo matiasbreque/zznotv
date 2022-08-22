@@ -1,0 +1,441 @@
+/*
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-rows: 200px 1fr 200px;
+   
+    height: 100vh;
+    min-width: 100vh;
+    
+    
+}
+*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-rows:  1fr ;
+   grid-template-columns: 1fr;
+    height: 100vh;
+    min-width: 100vh;
+    
+    
+}
+
+.headerIndex{
+    grid-area: header;
+
+}
+
+.mainIndex{
+    grid-area: main;
+}
+
+.footerIndex{
+    grid-area: footer;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(5, 5, 5);
+    color: #ffffff;
+    min-width: 100vh;
+
+
+ 
+}
+
+#tituloindex{
+    color: #ffffff;
+    font-size: 26px;
+   flex: 1;
+ 
+}
+
+
+
+.header__nav{
+   margin: 0px;
+ 
+    padding: 0px ; 
+   
+}
+
+
+/*Menu*/
+
+.header__nav ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start
+    ;
+   
+    list-style-type: none;
+    padding: 2px;
+    
+}
+.header__nav ul li {
+    
+    margin: 10px;
+    padding: 0px 5px 0px 5px;
+   
+}
+.header__nav ul li a {
+    border-right: #ffffff solid;
+    border-bottom: #ffffff solid;
+    border-radius: 4px;
+    border-width: 2px;
+    text-decoration: none;
+ 
+    color: #ffffff;
+}
+
+.header__nav ul li a:hover {
+    color: rgb(207, 207, 207);
+    box-sizing: border-box;
+    margin: 3px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+/*Sloganes derechos*/
+/*Padre*/
+#slogans {
+    display: flex;
+    justify-content: flex-start;
+    align-items:baseline;
+
+    
+    
+}
+/*Hijos*/
+.slogan{
+    font-size: large;
+    margin: 5px;
+    padding: 5px;
+}
+.porCul{ 
+    
+    padding: 0%;
+    margin: 0%;
+    font-size: x-small;
+}
+
+/*Titulo Index*/
+#news{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 20px ;
+    padding: 30px;
+}
+
+.tituloNews{
+    font-style: italic;
+
+}
+
+.news{
+    font-style: italic;
+    font-size: smaller;
+}
+
+
+/*Articulos*/
+/*.indexArticulos{
+    display: flex;
+    
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items:center;
+    margin: 2px;
+    padding: 1%;
+}*/
+
+/*.indexArticulos{
+    display: flex;
+    
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items:center;
+    margin: 2px;
+    padding: 1%;
+}*/
+
+.indexArticulos{
+    display: flex;
+    
+    flex-flow: column wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin: 2px;
+    padding: 1%;
+}
+.div__art{
+    align-items: center;
+    width: 25%;
+    margin: 10px;
+    padding-top: 20px ;
+    padding-bottom: 50px;
+   
+}
+
+.div__art a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+.articulosMain{
+    height: 280px;
+    width: 250px;
+    border: black solid;
+    border-radius: 8px;
+
+    
+}
+
+/*titulos de paginas*/
+.titulosPaginas{
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+.titulosPaginasLeft{
+    text-align: left;
+    margin: 5px;
+    padding: 10px 10px 10px 25px;
+  
+}
+
+
+
+/*Articulos de Musica en Index*/
+
+.articulosMusicaCine{
+    width: 250px;
+    height: 180px;
+    padding: 0;
+    margin: 0;
+}
+
+/*agenda */
+.section__agenda{
+    display: flex;
+    
+    flex-flow: column wrap;
+    justify-content:flex-start;
+    
+    margin: 5px;
+    padding: 2%;
+}
+.div__agenda{
+    align-items: center;
+    width: 25%;
+    margin: 10px;
+    padding-top: 20px ;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+.div__agenda a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.desc__agenda{
+    color: #505050;
+       
+}
+
+.articulosAgenda{
+     width: 400px;
+     height: 300px;
+}
+/*Contacto*/
+
+.usDesc{
+    padding: 2px 0px 0px 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 25px 10px 10px 10px;
+    padding: 10px 10px 10px 25px;
+   
+}
+
+.inForm{
+    padding: 5px;
+    margin: 10px;
+}
+.outForm{
+    padding: 10px 5px 5px 40px;
+    margin: 10px;
+}
+label{
+    border-bottom:rgb(190, 190, 190) 1px solid;
+    border-width: 2px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.botones{
+    font-family: 'Poppins', sans-serif;
+    font-style: oblique;
+    background-color: rgb(10, 10, 10);
+    color:#ffffff;
+    margin: 1px;
+    padding: 1px;
+}
+/*PONER CLASE MAS ADELANTE*/
+
+
+/*footer*/
+footer{
+    background-color: rgb(2, 2, 2);
+    color:#ffffff;
+    text-align: center;
+   margin-top: auto;
+    padding: 1em 0;
+    bottom: 0;
+    min-width: 100vh;
+}
+
+@media screen and (max-width: 599px) and (orientation: landscape) {
+  body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-rows:  100vh ;
+   grid-template-columns: 100vh;
+    height: 100vh;
+    min-width: 100vh;
+    
+    
+}
+}
+/*Fin diseño mobile*/  
+@media screen and (min-width: 1200px) {
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        ". main ."
+        "footer footer footer"
+        
+        ;
+        grid-template-rows: 30% 1fr 1fr ;
+        grid-template-columns: 10% 1fr 10%;
+        height: 100vh;
+        min-width: 100%;
+    }
+    .porCul{
+        position: absolute;
+        
+        font-size: small;
+        margin: 30px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .indexArticulos{
+        display: flex;
+        
+        flex-flow: row wrap;
+        justify-content:space-around;
+        align-items:center;
+        margin: 2px;
+        padding: 1%;
+    }
+    .titulosPaginas{
+        text-align: center;
+        margin: 30px;
+        padding: 30px;
+    }
+    #slogans {
+        display: flex;
+        justify-content: flex-end;
+        align-items:baseline;
+    }
+    #news{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-top: 20px ;
+        padding: 30px;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+    
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+       
+        min-width: 100vh;
+        
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+        background-color: rgb(5, 5, 5);
+        color: #ffffff;
+        
+      
+    }
+   
+    .header__nav ul{
+  display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-end;
+    align-items: center;
+      min-width: 100vh;
+    list-style-type: none;
+    
+}
+.header__nav ul li {
+   
+    margin: 10px;
+    padding: 0px 5px 0px 5px;
+    }  
+   
+}
