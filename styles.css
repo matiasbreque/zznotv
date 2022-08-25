@@ -31,7 +31,7 @@ body{
     grid-template-rows:  1fr ;
    grid-template-columns: 1fr;
     height: 100vh;
-    min-width: 100vh;
+    width: 100vw;
     
     
 }
@@ -85,7 +85,8 @@ header{
    margin: 0px;
  
     padding: 0px ; 
-   
+
+ 
 }
 /*BORRAR LUEGO*/
 .img__logo:hover{
@@ -129,8 +130,16 @@ header{
     margin: 3px;
     border-radius: 5px;
     border-width: 1px;
-    transition: all 0,5s ease;
+    transition: all 0.5s ease;
 }
+/*Main*/
+/*.mainIndex
+{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    min-width: 100vw;
+}*/
 
 /*Sloganes derechos*/
 /*Padre*/
@@ -145,8 +154,8 @@ header{
 /*Hijos*/
 .slogan{
     font-size: large;
-    margin: 5px;
-    padding: 5px;
+    margin: 0px;
+    padding: 0px;
 }
 .porCul{ 
     
@@ -275,6 +284,14 @@ header{
     margin: 0;
 }
 
+/*Articulos cine en Index*/
+.indexCine{
+
+    padding-bottom: 30px;
+}
+#lineaIndex{
+    padding: 10px 0px 20px 0px ;
+}
 /*agenda */
 .section__agenda{
     display: flex;
@@ -345,7 +362,7 @@ label{
 .botones{
     font-family: 'Poppins', sans-serif;
     font-style: oblique;
-    background-color: rgb(10, 10, 10);
+   
     color:#ffffff;
     margin: 1px;
     padding: 1px;
@@ -361,10 +378,10 @@ footer{
    margin-top: auto;
     padding: 1em 0;
     bottom: 0;
-    min-width: 100vh;
+    width: 100vw;
 }
-
-@media screen and (max-width: 599px) and (orientation: landscape) {
+/*
+@media screen and (max-width: 599px) and (orientation: portrait) {
   body{
     margin: 0px;
     padding: 0px;
@@ -377,12 +394,12 @@ footer{
     ;
     grid-template-rows:  100vh ;
    grid-template-columns: 100vh;
-    height: 100vh;
+    height: 100vw;
     min-width: 100vw;
     
     
 }
-}
+}*/
 /*Fin diseño mobile*/  
 @media screen and (min-width: 1200px) {
 
