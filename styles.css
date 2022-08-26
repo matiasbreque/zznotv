@@ -325,7 +325,16 @@ header{
 .articulosAgenda{
      width: 400px;
      height: 300px;
+
+
 }
+
+/*Peliuclas*/
+
+#bottom{
+    padding:0px 0px 20px 55px ;
+}
+
 /*Contacto*/
 
 .usDesc{
