@@ -1,0 +1,102 @@
+/*Slogonaes */
+
+
+#slogans {
+    display: flex;
+    justify-content: flex-start;
+    align-items:baseline;
+
+    .slogan{
+        font-size: large;
+        margin: 0px;
+        padding: 0px;
+    }
+    .porCul{ 
+    
+        padding: 0%;
+        margin: 0%;
+        font-size: x-small;
+    }
+
+}
+
+/*Titulo index*/
+
+#news{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 20px ;
+    padding: 30px;
+    
+    .tituloNews{
+        font-style: italic;
+    
+    }
+    
+    .news{
+        font-style: italic;
+        font-size: smaller;
+        animation: news 3s  infinite forwards;
+    }
+    @keyframes news{
+        0% {
+          color: $colornegro;
+          padding: 0px 0px 0px 0px;
+        }
+        25% {
+            color: rgb(200, 0, 0);;
+          padding: 0px 0px 0px 10px;
+        }
+        50% {
+          color: rgb(255, 50, 50);
+          padding: 0px 0px 0px 10px;
+          transform: translateX(20px) rotate(360deg);
+        }
+        100% {
+          color: rgb(05, 10, 10);;
+          padding: 0px 0px 0px 0px;
+        }
+     }
+ } 
+  
+      
+    
+
+
+/*Articulos Index*/
+
+.indexArticulos{
+    display: flex;
+    
+    flex-flow: column wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin: 2px;
+    padding: 1%;
+
+    .div__art{
+        align-items: center;
+        width: 25%;
+        margin: 10px;
+        padding-top: 20px ;
+        padding-bottom: 50px;
+       
+        a{
+            text-decoration: none;
+            list-style-type: none;
+            color: black;
+        }
+        .articulosMain{
+                height: 280px;
+                width: 250px;
+                border: black solid;
+                border-radius: 8px;
+            
+                
+            }
+        
+        }
+    
+    }
+

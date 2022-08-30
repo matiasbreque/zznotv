@@ -1,0 +1,24 @@
+header{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: $colornegro;
+    color: #ffffff;
+    min-width: 100vh;
+  
+    #tituloindex{
+        color: #ffffff;
+        font-size: 26px;
+       flex: 1;
+     
+    }
+
+}
+
