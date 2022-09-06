@@ -1,0 +1,16 @@
+@mixin label ($borColor, $borWi, $mar, $padd ) {
+    border-bottom: $borColor 1px solid;
+    border-width: $borWi;
+    margin: $mar;
+    padding: $padd;
+}
+
+/*Linea 204 en _main*/
+
+@mixin flex ( $flexD, $flexW,$justify,$alignC){
+    display: flex;
+    flex-direction: $flexD;
+    flex-wrap:$flexW ;
+    justify-content: $justify;
+    align-content: $alignC;
+}/*linea 187 en _main*/

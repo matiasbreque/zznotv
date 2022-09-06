@@ -1,0 +1,17 @@
+%flexRowBetween{
+display: flex;
+flex-direction: row;
+
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+}/*linea 2 en _header*/
+
+%flexColStart{
+
+    display: flex;
+    
+    flex-flow: column wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+}/*Linea 70 en _main*/

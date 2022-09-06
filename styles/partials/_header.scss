@@ -1,20 +1,14 @@
 header{
-    display: flex;
-    flex-direction: row;
-
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    
+    @extend %flexRowBetween;
     margin: 0px;
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
-    background-color: $colornegro;
-    color: #ffffff;
+    font-family: map-get($estilos , font );
+    background-color: map-get($estilos , colornegro );
+    color: map-get($estilos , colorblanco );
     min-width: 100vh;
   
     #tituloindex{
-        color: #ffffff;
+        color: map-get($estilos , colorblanco );
         font-size: 26px;
        flex: 1;
      

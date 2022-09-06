@@ -1,5 +1,5 @@
 footer{
-    background-color: $colornegro;
+    background-color: map-get($estilos , colornegro );
     color:#ffffff;
     text-align: center;
    margin-top: auto;
