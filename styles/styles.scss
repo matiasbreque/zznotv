@@ -2,7 +2,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family:map-get($estilos , font ) !important;
     display: grid;
     grid-template-areas:
     "header"
