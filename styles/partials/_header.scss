@@ -1,18 +1,14 @@
-header{
-    @extend %flexRowBetween;
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vh;
     margin: 0px;
     padding: 0px;
-    font-family: map-get($estilos , font );
-    background-color: map-get($estilos , colornegro );
-    color: map-get($estilos , colorblanco );
-    min-width: 100vh;
+    font-family: "Poppins", sans-serif !important;
+    background-color: rgb(5, 5, 5);
+    color: #ffffff;
+  }
   
-    #tituloindex{
-        color: map-get($estilos , colorblanco );
-        font-size: 26px;
-       flex: 1;
-     
-    }
-
-}
-

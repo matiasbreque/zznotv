@@ -1,8 +1,11 @@
 @import "./partials/maps","./partials/mixins","./partials/extends","./partials/header", "./partials/main" ,"./partials/footer", "./partials/menu";
+
+
+
 body{
     margin: 0px;
     padding: 0px;
-    font-family:map-get($estilos , font ) !important;
+    font-family:map-get($estilos , font );
     display: grid;
     grid-template-areas:
     "header"
@@ -38,17 +41,6 @@ body{
 
 
 
-.header__nav ul li a:hover {
-    color: rgb(207, 207, 207);
-    box-sizing: border-box;
-    margin: 3px;
-    border-radius: 5px;
-    border-width: 1px;
-    transition: all 0.5s ease;
-}
-
-
-
 
 
 /*Fin diseño mobile*/  
@@ -57,7 +49,7 @@ body{
     body{
         margin: 0px;
         padding: 0px;
-        font-family: 'Poppins', sans-serif;
+        font-family: map-get($estilos, colornegro ) !important;
         display: grid;
         grid-template-areas:
         "header header header"
@@ -68,7 +60,7 @@ body{
         grid-template-rows: 30% 1fr 1fr ;
         grid-template-columns: 10% 1fr 10%;
         height: 100vh;
-        min-width: 100%;
+        width: 100vh;
     }
     .porCul{
         position: absolute;
@@ -83,6 +75,7 @@ body{
         flex-flow: row wrap;
         justify-content:space-around;
         align-items:center;
+        width:100vw ;
         margin: 2px;
         padding: 1%;
     }
@@ -103,42 +96,4 @@ body{
         margin-top: 20px ;
         padding: 30px;
     }
-    header{
-        display: flex;
-        flex-direction: row;
-    
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        
-       
-        min-width: 100vh;
-        
-        margin: 0px;
-        padding: 0px;
-        font-family: 'Poppins', sans-serif;
-        background-color: rgb(5, 5, 5);
-        color: #ffffff;
-        
-      
-    }
-   
-    .header__nav ul{
-  display: flex;
-    flex-flow: row wrap;
-    justify-content:flex-end;
-    align-items: center;
-      min-width: 100vh;
-    list-style-type: none;
-    
 }
-.header__nav ul li {
-   
-    margin: 10px;
-    padding: 0px 5px 0px 5px;
-    }  
-   
-}
-
-
-

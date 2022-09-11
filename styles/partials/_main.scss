@@ -126,7 +126,7 @@
 
 }
 
-#lineaIndex{
+.lineaIndex{
     padding: 10px 0px 20px 0px ;
 }
 
@@ -157,13 +157,19 @@
             text-decoration: none;
             list-style-type: none;
             color: map-get($estilos , colornegro );
-            
+            cursor: pointer;
             
         
         }
     
     }
 }
+
+.pAgenda {
+    padding: 0px 0px 0px 40px;
+    margin-left: 40px;
+}
+
 .articulosAgenda{
     width: 400px;
     height: 300px;

@@ -1,34 +1,12 @@
-.header__nav{
-    margin: 0px;
-  
-     padding: 0px ; 
-     ul{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        align-items: flex-start
-        ;
-       
-        list-style-type: none;
-        padding: 2px;
-        
-    
-    li {
-    
-        margin: 10px;
-        padding: 0px 5px 0px 5px;
-       
-    
-    a {
-        border-right: map-get($estilos , colorblanco )  solid;
-        border-bottom: map-get($estilos , colorblanco )solid;
-        border-radius: 4px;
-        border-width: 2px;
-        text-decoration: none;
-     
-        color: map-get($estilos , colorblanco );
-        
-    }
-    }
- } 
-}
+.header__nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 100vh;
+    list-style-type: none;
+  }
+  .header__nav ul li {
+    margin: 10px;
+    padding: 0px 5px 0px 5px;
+  }
