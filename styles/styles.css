@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+
 header {
   display: flex;
   flex-direction: row;
@@ -18,11 +20,13 @@ header #tituloindex {
   flex: 1;
 }
 
+
+
 /*Slogonaes */
 #slogans {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: flex-end;
+  align-items: center;
 }
 #slogans .slogan {
   font-size: large;
@@ -63,7 +67,7 @@ header #tituloindex {
   align-items: flex-start;
   margin: 2px;
   padding: 1%;
-  min-width: fit-content;
+  
 }
 .indexArticulos .div__art {
   align-items: center;
@@ -199,9 +203,41 @@ footer {
   color: #ffffff;
   text-align: center;
   margin-top: auto;
-  padding: 1em 0;
-  bottom: 0;
-  width: 100vw;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  
+  
+}
+
+.footerTyc{
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff; 
+}
+.footerTyc:hover{
+  list-style-type: none;
+  text-decoration: none;
+  color: #828080; 
+}
+.footerIndex ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 5px;
+}
+.footerIndex ul li {
+  margin: 5px;
+  padding: 5px;
+}
+.footerIndex ul li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.footerIndex ul li a:hover{
+  
+  color: #828080;
 }
 
 .header__nav {
@@ -234,11 +270,14 @@ body {
   padding: 0px;
   font-family: "Poppins", sans-serif;
   display: grid;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: 
+  "header"
+   "main" 
+   "footer";
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   height: 100vh;
-  width: 100vw;
+  min-width: 100vw;
 }
 
 .headerIndex {
@@ -247,11 +286,14 @@ body {
 
 .mainIndex {
   grid-area: main;
+ 
 }
 
-.footerIndex {
+.footerIndex{
   grid-area: footer;
 }
+
+
 
 .header__nav ul li a:hover {
   color: rgb(207, 207, 207);
@@ -262,7 +304,13 @@ body {
   transition: all 0.5s ease;
 }
 
-
+/*Tyc*/
+.pTyc{
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
 /*Fin diseño mobile*/
 @media screen and (min-width: 1200px) {
@@ -278,14 +326,9 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 10% 1fr 10%;
     height: 100vh;
-    min-width: 100%;
+    min-width: 100vw;
   }
-  .porCul {
-    position: absolute;
-    font-size: small;
-    margin: 30px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
+
   .indexArticulos {
     display: flex;
     flex-flow: row wrap;
@@ -304,6 +347,12 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
+  }
+  .porCul {
+    position: absolute;
+    font-size: small;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
   #news {
     display: flex;
@@ -337,4 +386,3 @@ body {
     margin: 10px;
     padding: 0px 5px 0px 5px;
   }
-}/*# sourceMappingURL=styles.css.map 
