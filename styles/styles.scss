@@ -1,0 +1,74 @@
+@import "./partials/extends" ,"./partials/maps","./partials/mixin","./partials/header","./partials/main","./partials/footer" ,"./partials/imagenes";
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header"
+     "main" 
+     "footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    min-width: 100vw !important;
+  }
+  
+  .headerIndex {
+    grid-area: header;
+  }
+  
+  .mainIndex {
+    grid-area: main;
+   
+  }
+  
+  .footerIndex{
+    grid-area: footer;
+  }
+  
+  /*media query*/
+
+  @media  screen and (min-width: 1200px  )  {
+    body{
+        margin: 0;
+        padding: 0;    
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        ". main ."
+        "footer footer footer" ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 10% 1fr 10%;
+        height: 100vh;
+        min-width: 100vw;
+        max-width: 100vw;
+        font-family: "Poppins", sans-serif;
+    }
+    .indexArticulos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2px;
+        padding: 2px;
+        width: fit-content;
+
+    }
+    .titulosPaginas{
+        text-align: center;
+        margin: 30px;
+        padding:30px;
+    }
+    
+    #news {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-top: 20px;
+        padding: 30px;
+      }
+  }
+ 

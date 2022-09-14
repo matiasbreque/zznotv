@@ -1,0 +1,171 @@
+
+
+  
+  /*Titulo index*/
+  #news {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 20px;
+    padding: 30px;
+  }
+  #news .tituloNews {
+    font-style: italic;
+  }
+  #news .news {
+    font-style: italic;
+    font-size: smaller;
+    -webkit-animation: news 3s infinite forwards;
+            animation: news 3s infinite forwards;
+  }
+  
+  
+  /*Articulos Index*/
+  .indexArticulos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2px;
+    padding: 1%;
+    
+    .div__art {
+        align-items: center;
+        width: 25%;
+        margin: 10px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    
+        a {
+            text-decoration: none;
+            list-style-type: none;
+            color: rgb(5, 5, 5);
+        
+            
+        }
+    }
+  }
+
+  
+  /*titulos en otras paginas*/
+  .titulosPaginas {
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+  }
+  
+  .titulosPaginasLeft {
+    text-align: left;
+    margin: 5px;
+    padding: 10px 10px 10px 25px;
+  }
+  
+  /*Articulos de Musica en Index*/
+  .articulosMusicaCine {
+    width: 250px;
+    height: 180px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /*Articulos cine en Index*/
+  .indexCine {
+    padding-bottom: 30px;
+  }
+  
+  #lineaIndex {
+    padding: 10px 0px 20px 0px;
+    min-width: 100vw;
+  }
+  
+  /*Agenda*/
+  .section__agenda {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 5px;
+    padding: 2%;
+    
+    .div__agenda {
+        align-items: center;
+        width: 25%;
+        margin: 10px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+    
+        a {
+            text-decoration: none;
+            list-style-type: none;
+            color: rgb(5, 5, 5);
+          }
+    }
+    .desc__agenda {
+        color: #505050;
+      } 
+}
+  
+  
+  .articulosAgenda {
+    width: 400px;
+    height: 300px;
+  }
+  .pAgenda {
+    padding: 0px 0px 0px 30px;
+  
+  }
+  
+  /*Peliuclas*/
+  #bottom {
+    padding: 0px 0px 20px 55px;
+  }
+  
+  .usDesc {
+    padding: 2px 0px 0px 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 25px 10px 10px 10px;
+    padding: 10px 10px 10px 25px;
+  }
+  
+  .inForm {
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  .outForm {
+    padding: 10px 5px 5px 40px;
+    margin: 10px;
+  }
+  
+  label {
+    border-bottom: rgb(190, 190, 190) 1px solid;
+    border-width: 2px;
+    margin: 2px;
+    padding: 2px;
+  }
+  
+  .botones {
+    font-family: "Poppins", sans-serif;
+    font-style: oblique;
+    color: #ffffff;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  /*Tyc*/
+
+  .pTyc{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
