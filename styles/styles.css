@@ -1,3 +1,4 @@
+/*Bootstrap */
 /*Titulo index*/
 #news {
   display: flex;
@@ -53,14 +54,6 @@
   padding: 10px 10px 10px 25px;
 }
 
-/*Articulos de Musica en Index*/
-.articulosMusicaCine {
-  width: 250px;
-  height: 180px;
-  padding: 0;
-  margin: 0;
-}
-
 /*Articulos cine en Index*/
 .indexCine {
   padding-bottom: 30px;
@@ -113,7 +106,7 @@
 .usDesc {
   padding: 2px 0px 0px 5px;
   margin-bottom: 10px;
-  text-align: justify;
+  text-align: center;
 }
 
 fieldset {
@@ -203,6 +196,14 @@ footer ul li a {
   width: 250px;
   border: rgb(5, 5, 5) solid;
   border-radius: 8px;
+}
+
+/*Articulos de Musica en Index*/
+.articulosMusicaCine {
+  width: 250px;
+  height: 180px;
+  padding: 0;
+  margin: 0;
 }
 
 body {
