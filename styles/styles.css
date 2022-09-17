@@ -19,6 +19,10 @@
   animation: news 3s infinite forwards;
 }
 
+.h5Index {
+  margin: 5px;
+}
+
 /*Articulos Index*/
 .indexArticulos {
   display: flex;
@@ -193,7 +197,7 @@ footer ul li a {
 
 .articulosMain {
   height: 280px;
-  width: 250px;
+  width: 320px;
   border: rgb(5, 5, 5) solid;
   border-radius: 8px;
 }
@@ -206,6 +210,43 @@ footer ul li a {
   margin: 0;
 }
 
+.videoYt {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 10px;
+}
+
+.hrArt {
+  margin: 20px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.pArt {
+  display: flex;
+  justify-content: baseline;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  min-width: 50%;
+}
+
+@media screen and (max-width: 599px) {
+  .ifArt {
+    width: 350px;
+    height: 220px;
+  }
+  .videoYt {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 10px;
+  }
+}
 body {
   margin: 0px;
   padding: 0px;

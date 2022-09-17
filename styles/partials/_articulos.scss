@@ -1,0 +1,38 @@
+.videoYt{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center ;
+    padding-top: 50px ;
+    padding-bottom: 30px;
+    margin: 10px;
+}
+
+.hrArt{
+    margin: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.pArt{
+    display: flex;
+    justify-content: baseline;
+    flex-flow: row wrap ;
+    align-items: flex-start;
+    min-width: 50%;
+}
+
+@media  screen and (max-width: 599px  ) {
+    .ifArt{
+        width: 350px;
+        height: 220px;
+    }
+    .videoYt{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start
+        ;
+        padding-top: 50px ;
+        padding-bottom: 30px;
+        margin: 10px;
+    }
+}
