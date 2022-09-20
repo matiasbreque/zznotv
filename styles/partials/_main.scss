@@ -60,7 +60,7 @@
   .titulosPaginasLeft {
     text-align: left;
     margin: 5px;
-    padding: 10px 10px 10px 25px;
+    padding: 10px 10px 10px 0px;
   }
   
  
@@ -84,7 +84,7 @@
     
     .div__agenda {
         align-items: center;
-        width: 25%;
+      
         margin: 10px;
         padding-top: 20px;
         padding-bottom: 25px;
@@ -102,10 +102,7 @@
 }
   
   
-  .articulosAgenda {
-    width: 400px;
-    height: 300px;
-  }
+  
   .pAgenda {
     padding: 0px 0px 0px 30px;
   

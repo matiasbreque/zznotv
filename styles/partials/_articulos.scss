@@ -12,7 +12,15 @@
     padding-top: 50px;
     padding-bottom: 30px;
 }
-
+.pAutor{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap ;
+    color: rgb(150, 150, 150);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: smaller;
+}
 .pArt{
     display: flex;
     justify-content: baseline;

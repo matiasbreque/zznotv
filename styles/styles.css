@@ -55,7 +55,7 @@
 .titulosPaginasLeft {
   text-align: left;
   margin: 5px;
-  padding: 10px 10px 10px 25px;
+  padding: 10px 10px 10px 0px;
 }
 
 /*Articulos cine en Index*/
@@ -78,7 +78,6 @@
 }
 .section__agenda .div__agenda {
   align-items: center;
-  width: 25%;
   margin: 10px;
   padding-top: 20px;
   padding-bottom: 25px;
@@ -91,11 +90,6 @@
 }
 .section__agenda .desc__agenda {
   color: #505050;
-}
-
-.articulosAgenda {
-  width: 400px;
-  height: 300px;
 }
 
 .pAgenda {
@@ -210,6 +204,18 @@ footer ul li a {
   margin: 0;
 }
 
+/*Agenda */
+.articulosAgenda {
+  width: 400px;
+  height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .articulosAgenda {
+    width: 300px;
+    height: 220px;
+  }
+}
 .videoYt {
   display: flex;
   flex-flow: row nowrap;
@@ -223,6 +229,16 @@ footer ul li a {
   margin: 20px;
   padding-top: 50px;
   padding-bottom: 30px;
+}
+
+.pAutor {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  color: rgb(150, 150, 150);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: smaller;
 }
 
 .pArt {
