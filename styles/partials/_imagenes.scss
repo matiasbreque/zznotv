@@ -1,6 +1,6 @@
 .articulosMain {
     height: 280px;
-    width: 320px;
+    width: 380px;
     border: rgb(5, 5, 5) solid;
     border-radius: 8px;
   }
@@ -19,11 +19,29 @@
     width: 400px;
     height: 300px;
   }
+  /*Articulos*/
+
+  .imgArticulos{
+    width: 800px;
+    height: 600px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
 
   @media  screen and (max-width: 600px  ) {
 
     .articulosAgenda {
       width: 300px;
       height: 220px;
+    }
+    .articulosMain {
+      height: 280px;
+      width: 350px;
+      border: rgb(5, 5, 5) solid;
+      border-radius: 8px;
+    }
+    .imgArticulos{
+      width: 350px;
+      height: 300px;
     }
   }
