@@ -70,6 +70,13 @@
   min-width: 100vw;
 }
 
+.buttom {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
 /*Agenda*/
 .section__agenda {
   display: flex;
@@ -239,7 +246,7 @@ footer ul li a {
 .videoYt {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 50px;
   padding-bottom: 30px;
   margin: 10px;
