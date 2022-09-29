@@ -41,7 +41,7 @@
         padding-bottom: 50px;
     
         a {
-           @extend %listas;
+           @extend %lista;
             color: map-get($color, negro);
         
             
@@ -121,7 +121,7 @@
   .usDesc {
     padding: 2px 0px 0px 5px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align:left;
   }
   
   fieldset {
