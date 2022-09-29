@@ -1,6 +1,6 @@
 footer {
-    background-color: rgb(5, 5, 5);
-    color: #ffffff;
+    background-color: map-get($color, negro);
+    color: map-get($color, blanco);
     text-align: center;
     margin-top: auto;
     margin: 0;
@@ -22,19 +22,17 @@ footer {
           }
             a{
                 text-decoration: none;
-                color: #ffffff;
+                color: map-get($color, blanco);
               }
         }
     }
   }
   
   .footerTyc{
-    list-style-type: none;
-    text-decoration: none;
-    color: #ffffff; 
+    @extend %lista;
+    color: map-get($color, blanco); 
     &:hover{
-        list-style-type: none;
-    text-decoration: none;
+      @extend %lista;
     color: #828080; 
     }
 }

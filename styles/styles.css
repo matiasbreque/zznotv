@@ -1,4 +1,9 @@
-/*Bootstrap */
+.section__agenda .div__agenda a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*Se ha usado Bootstrap */
 /*Titulo index*/
 #news {
   display: flex;
@@ -28,9 +33,10 @@
 /*Articulos Index*/
 .indexArticulos {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: nowrap;
   margin: 2px;
   padding: 1%;
 }
@@ -80,8 +86,10 @@
 /*Agenda*/
 .section__agenda {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
   margin: 5px;
   padding: 2%;
 }
@@ -93,8 +101,6 @@
   padding-left: 25px;
 }
 .section__agenda .div__agenda a {
-  text-decoration: none;
-  list-style-type: none;
   color: rgb(5, 5, 5);
 }
 .section__agenda .desc__agenda {
@@ -119,8 +125,9 @@
 fieldset {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
   align-content: flex-start;
   margin: 25px 10px 10px 10px;
   padding: 10px 10px 10px 25px;
@@ -245,8 +252,10 @@ footer ul li a {
 }
 .videoYt {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   padding-top: 50px;
   padding-bottom: 30px;
   margin: 10px;
@@ -260,8 +269,10 @@ footer ul li a {
 
 .pAutor {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-  flex-flow: row wrap;
+  align-items: flex-start;
+  flex-wrap: nowrap;
   color: rgb(150, 150, 150);
   padding-top: 10px;
   padding-bottom: 5px;
@@ -270,9 +281,10 @@ footer ul li a {
 
 .pArt {
   display: flex;
+  flex-direction: row;
   justify-content: baseline;
-  flex-flow: row wrap;
   align-items: flex-start;
+  flex-wrap: nowrap;
   min-width: 50%;
 }
 

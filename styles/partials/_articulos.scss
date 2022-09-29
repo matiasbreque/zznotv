@@ -1,7 +1,6 @@
 .videoYt{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start ;
+    @include flex($justify: flex-start, $align: center, $wrap: true);
+
     padding-top: 50px ;
     padding-bottom: 30px;
     margin: 10px;
@@ -13,19 +12,16 @@
     padding-bottom: 30px;
 }
 .pAutor{
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap ;
+    @include flex($justify: flex-start, $align: flex-start, $wrap: false);
+    
     color: rgb(150, 150, 150);
     padding-top: 10px;
     padding-bottom: 5px;
     font-size: smaller;
 }
 .pArt{
-    display: flex;
-    justify-content: baseline;
-    flex-flow: row wrap ;
-    align-items: flex-start;
+    @include flex($justify: baseline, $align: flex-start, $wrap: false);
+    
     min-width: 50%;
 }
 

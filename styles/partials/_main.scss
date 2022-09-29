@@ -28,10 +28,8 @@
   
   /*Articulos Index*/
   .indexArticulos {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @include flex($direction: column, $justify: flex-start, $align: flex-start, $wrap: false);
+    
     margin: 2px;
     padding: 1%;
     
@@ -43,9 +41,8 @@
         padding-bottom: 50px;
     
         a {
-            text-decoration: none;
-            list-style-type: none;
-            color: rgb(5, 5, 5);
+           @extend %listas;
+            color: map-get($color, negro);
         
             
         }
@@ -86,9 +83,8 @@
   
   /*Agenda*/
   .section__agenda {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
+    @include flex($direction: column ,$justify: flex-start, $align: flex-start, $wrap: false);
+    
     margin: 5px;
     padding: 2%;
     
@@ -101,9 +97,8 @@
         padding-left: 25px;
     
         a {
-            text-decoration: none;
-            list-style-type: none;
-            color: rgb(5, 5, 5);
+           @extend %lista;
+            color:map-get($color, negro);
           }
     }
     .desc__agenda {
@@ -130,10 +125,8 @@
   }
   
   fieldset {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    @include flex($direction: column,$justify: flex-start,$align: flex-start, $wrap: true);
+   
     align-content: flex-start;
     margin: 25px 10px 10px 10px;
     padding: 10px 10px 10px 25px;
@@ -159,7 +152,7 @@
   .botones {
     font-family: "Poppins", sans-serif;
     font-style: oblique;
-    color: #ffffff;
+    color: map-get($color, blanco);
     margin: 1px;
     padding: 1px;
   }
